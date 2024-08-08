@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:vn_qsoft_interview_shoppingcart/managers/local_storage/database_helpers.dart';
 import 'package:vn_qsoft_interview_shoppingcart/managers/service_locator/di.dart';
 import 'package:vn_qsoft_interview_shoppingcart/presentation/cart/bloc/cart_bloc.dart';
 import 'package:vn_qsoft_interview_shoppingcart/presentation/home/bloc/home_bloc.dart';

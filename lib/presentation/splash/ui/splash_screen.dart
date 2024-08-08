@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:vn_qsoft_interview_shoppingcart/main.dart';
 
 import '../../../generated/assets.dart';
 import '../../home/ui/home_screen.dart';

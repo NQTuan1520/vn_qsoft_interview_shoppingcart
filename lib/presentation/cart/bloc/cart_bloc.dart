@@ -1,5 +1,5 @@
-import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vn_qsoft_interview_shoppingcart/domain/cart/entity/cart_item_entity.dart';
 import 'package:vn_qsoft_interview_shoppingcart/domain/home/items/entity/item_entity.dart';
 
