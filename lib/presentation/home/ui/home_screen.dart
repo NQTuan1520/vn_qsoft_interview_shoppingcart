@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:vn_qsoft_interview_shoppingcart/managers/routes/route_name.dart';
 import 'package:vn_qsoft_interview_shoppingcart/presentation/cart/bloc/cart_bloc.dart';
 import 'package:vn_qsoft_interview_shoppingcart/presentation/home/widgets/app_bar_custom_clipper.dart';
 import 'package:vn_qsoft_interview_shoppingcart/presentation/home/widgets/item_list_widget.dart';
@@ -12,8 +13,6 @@ import '../bloc/home_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
-
-  static const String routeName = '/home';
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -45,7 +44,7 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: CustomAppBar(
         height: 150.h,
         onShoppingPressed: () {
-          Navigator.pushNamed(context, CartScreen.routeName);
+          Navigator.pushNamed(context, RouteName.cart);
         },
       ),
       body: BlocBuilder<HomeBloc, HomeState>(

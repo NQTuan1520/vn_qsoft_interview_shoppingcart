@@ -38,7 +38,7 @@ class MyApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          onGenerateRoute: generateRoute,
+          onGenerateRoute: AppRoutes.generateRoute,
           home: const SplashScreen(),
         ),
       ),

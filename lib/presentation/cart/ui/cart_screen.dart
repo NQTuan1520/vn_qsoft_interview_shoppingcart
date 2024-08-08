@@ -3,14 +3,13 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:vn_qsoft_interview_shoppingcart/domain/cart/entity/cart_item_entity.dart';
+import 'package:vn_qsoft_interview_shoppingcart/managers/routes/route_name.dart';
 import '../../home/ui/home_screen.dart';
 import '../bloc/cart_bloc.dart';
 import '../widgets/cart_item_widget.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
-
-  static const String routeName = '/cart';
 
   @override
   Widget build(BuildContext context) {
@@ -147,8 +146,8 @@ class CartScreen extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pop();
                 context.read<CartBloc>().add(ResetCartItemEvent());
-                Navigator.of(context).pushAndRemoveUntil(
-                  MaterialPageRoute(builder: (context) => const HomeScreen()),
+                Navigator.of(context).pushNamedAndRemoveUntil(
+                  RouteName.home,
                   (Route<dynamic> route) => false,
                 );
               },
