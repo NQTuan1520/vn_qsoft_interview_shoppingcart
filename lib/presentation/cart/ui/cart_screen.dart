@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl/intl.dart';
 import 'package:vn_qsoft_interview_shoppingcart/domain/cart/entity/cart_item_entity.dart';
 import 'package:vn_qsoft_interview_shoppingcart/managers/routes/route_name.dart';
-import '../../home/ui/home_screen.dart';
 import '../bloc/cart_bloc.dart';
 import '../widgets/cart_item_widget.dart';
 

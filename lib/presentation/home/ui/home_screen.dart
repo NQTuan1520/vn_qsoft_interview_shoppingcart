@@ -8,7 +8,6 @@ import 'package:vn_qsoft_interview_shoppingcart/presentation/home/widgets/item_l
 import 'package:vn_qsoft_interview_shoppingcart/presentation/home/widgets/shimmer_list_widget.dart';
 
 import '../../../managers/utils/enum.dart';
-import '../../cart/ui/cart_screen.dart';
 import '../bloc/home_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
